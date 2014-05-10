@@ -34,9 +34,6 @@
 	                        <span id="habitantes"></span>
 	                         |
 	                        <span id="renta"></span>
-							
-							<span id="position"></span>
-
 	                    </div>
 	                </div>
 	                <div>
@@ -85,11 +82,6 @@
  <section>
     <div class="buttons-box">
 		<button data-value="1" class="verder next" id="verder">VERDER</button>
-		<div id="score">
-			<span id="mios">0</span>
-			<span>-</span>
-			<span id="tuyos">0</span>
-		</div>
 		<button data-value="0" class="mierder next" id="mierder">MIERDER</button>			
     </div> 	 	
  </section>
@@ -106,7 +98,7 @@
 		<script type="text/javascript">
 
 
-			Deck = {{ @carddata }};
+			Deck = <?php echo $carddata; ?>;
 
 			Fight.init();
 

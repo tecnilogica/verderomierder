@@ -36,10 +36,10 @@ var Fight = {};
 			//Update score
 			if(score==0){
 				this.score.mierder++;
-				document.getElementById('mierder').innerText = 'MIERDER ' + this.score.mierder;
+				document.getElementById('tuyos').innerText = this.score.mierder;
 			}else{
 				this.score.verder++;
-				document.getElementById('verder').innerText = 'VERDER ' + this.score.verder;
+				document.getElementById('mios').innerText = this.score.verder;
 			}
 			
 
@@ -59,6 +59,8 @@ var Fight = {};
 		},
 
 		setValues: function(){
+
+			document.getElementById('position').innerText = this.index+1 + ' de ' + Deck.length;
 
 			document.getElementById('ciudad').innerText = this.card.ciudad;
 			document.getElementById('habitantes').innerText = this.card.habitantes.toLocaleString() + ' hab.';
