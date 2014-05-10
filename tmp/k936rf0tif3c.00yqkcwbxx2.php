@@ -40,8 +40,8 @@
 
  <section>
     <div class="col-lg-8 col-lg-offset-2">
-			<button data-value="1" class="verder next">VERDER</button>
-			<button data-value="0" class="mierder next">MIERDER</button>
+			<button data-value="1" class="verder next" id="verder">VERDER</button>
+			<button data-value="0" class="mierder next" id="mierder">MIERDER</button>
 			<button class="result">RESULT</button>
 			
     </div> 	 	
