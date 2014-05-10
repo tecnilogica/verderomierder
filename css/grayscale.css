@@ -250,9 +250,6 @@ a:focus {
   margin: 0px 0px 20px 0px;
   width: 212px;
 }
-.btn-default.last {
-  margin-bottom: 40px;
-}
 .btn-default:hover,
 .btn-default:focus {
   border: 1px solid #28c3ab;
@@ -304,5 +301,5 @@ body {
 a img.logo {
   width: 100px;
   float: right;
-  margin-right: 20px;
+  margin: 25px 10px 0 0;
 }
