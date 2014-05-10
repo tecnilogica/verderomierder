@@ -301,3 +301,11 @@ body {
   background: #000;
   border-radius: 10px;
 }
+ul.list-result {
+  float: left;
+  text-align: left;
+  width: 50%;
+}
+ul.list-result li {
+  list-style: none;
+}
