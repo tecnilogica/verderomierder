@@ -11,11 +11,11 @@ foreach ($jsondata as $key => $value) {
 
 	foreach ($jsondata[$key]["properties"] as $pkey => $pvalue) {
 
-		if ($pkey=="concentracion_no2_mg_m3" || 
-			$pkey=="emisiones_co2_tm_per_capita" || 
-			$pkey=="pm_2_5_mg_m3") {
-			$pvalue *=-1;
-		} 
+		// if ($pkey=="concentracion_no2_mg_m3" || 
+		// 	$pkey=="emisiones_co2_tm_per_capita" || 
+		// 	$pkey=="pm_2_5_mg_m3") {
+		// 	$pvalue *=-1;
+		// } 
 
 		$jsondata[$key][$pkey] = $pvalue;
 

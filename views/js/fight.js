@@ -12,7 +12,7 @@ var Fight = {};
 
 		init: function(){
 			this.card = Deck[this.index];
-
+			this._setValues();
 			
 		},
 
@@ -37,7 +37,14 @@ var Fight = {};
 
 		_setValues: function(){
 
+			document.getElementById('ciudad').innerText = this.card.ciudad;
 
+
+			document.getElementById('accesibilidad').innerText = this.card.accesibilidad;
+			document.getElementById('no2').innerText = this.card.no2;
+			document.getElementById('co2').innerText = this.card.co2;
+			document.getElementById('accesibilidad').innerText = this.card.accesibilidad;
+			document.getElementById('accesibilidad').innerText = this.card.accesibilidad;
 
 		}
 
