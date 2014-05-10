@@ -68,7 +68,7 @@
 	            <div class="container">
 	                <div class="row">
 	                    <div class="col-md-8 col-md-offset-2 winner-box">
-	                        <h1 class="brand-heading">¡¡GANASTE!!</h1>
+	                        <h1 class="brand-heading none-float">¡¡GANASTE!!</h1>
 	                        <img src="../img/winner.png" alt="">
 	                    </div>
 	                    <div class="col-md-8 col-md-offset-2 loser-box">
