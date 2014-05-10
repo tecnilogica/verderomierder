@@ -330,7 +330,7 @@ ul.list-result li i {
   margin-right: 5px;
 }
 ul.list-result li span {
-  font-size: 13px;
+  font-size: 14px;
 }
 ul.list-result.verder i {
   color: #28C3AB;
@@ -384,6 +384,22 @@ ul.list-result.mierder span#pm {
   background: #DF2E4B;
 }
 #result-card {
+  display: none;
+}
+.winner-box,
+.loser-box {
+  display: none;
+}
+.winner .winner-box {
+  display: block;
+}
+.winner .loser-box {
+  display: none;
+}
+.loser .loser-box {
+  display: block;
+}
+.loser .winner-box {
   display: none;
 }
 a img.logo {

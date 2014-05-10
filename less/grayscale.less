@@ -408,7 +408,7 @@ ul.list-result{
             margin-right: 5px;
         }
         span{
-            font-size: 13px;
+            font-size: 14px;
         }
     }
     &.verder{
@@ -474,8 +474,26 @@ ul.list-result{
 #result-card{
     display: none;
 }
-
-
+.winner-box,
+.loser-box{
+    display: none;   
+}
+.winner{
+    .winner-box{
+        display: block;
+    }
+    .loser-box{
+        display: none;
+    }
+}
+.loser{
+    .loser-box{
+        display: block;
+    }
+    .winner-box{
+        display: none;
+    }
+}
 
 
 
