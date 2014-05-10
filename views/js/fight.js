@@ -67,17 +67,17 @@ var Fight = {};
 		setValues: function(){
 
 			document.getElementById('ciudad').innerText = this.card.ciudad;
-			document.getElementById('habitantes').innerText = this.card.habitantes;
-			document.getElementById('renta').innerText = this.card.renta;
+			document.getElementById('habitantes').innerText = this.card.habitantes.toLocaleString() + ' hab.';
+			document.getElementById('renta').innerText = this.card.renta.toLocaleString() + '€';
 			document.getElementById('imagen').src = '../img/imagen_' + this.card.cartodb_id;			
 
-			document.getElementById('accesibilidad').innerText = this.card.accesibilidad_y_movilidad_m_100_urbantur_2012;
-			document.getElementById('no2').innerText = this.card.concentracion_no2_mg_m3;
-			document.getElementById('co2').innerText = this.card.emisiones_co2_tm_per_capita;
-			document.getElementById('pm').innerText = this.card.pm_2_5_mg_m3;
-			document.getElementById('transporte').innerText = this.card.uso_transporte_no_vehiculo_privado;
-			document.getElementById('forestales').innerText = this.card.zonas_forestales;
-			document.getElementById('arbolado').innerText = this.card.zonas_verdes_y_arbolado;
+			document.getElementById('accesibilidad').innerText = this.card.accesibilidad_y_movilidad_m_100_urbantur_2012.toLocaleString() + ' sobre 100';
+			document.getElementById('no2').innerText = this.card.concentracion_no2_mg_m3.toLocaleString() + ' mg/m3';
+			document.getElementById('co2').innerText = this.card.emisiones_co2_tm_per_capita.toLocaleString() + ' tm per cápita';
+			document.getElementById('pm').innerText = this.card.pm_2_5_mg_m3.toLocaleString() + ' mg/m3';
+			//document.getElementById('transporte').innerText = this.card.uso_transporte_no_vehiculo_privado.toLocaleString();
+			document.getElementById('forestales').innerText = this.card.zonas_forestales.toLocaleString() + '%';
+			document.getElementById('arbolado').innerText = this.card.zonas_verdes_y_arbolado.toLocaleString() + '%';
 
 		},
 
