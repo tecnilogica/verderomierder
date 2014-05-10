@@ -64,12 +64,12 @@
 	            <div class="container">
 	                <div class="row">
 	                    <div class="col-md-8 col-md-offset-2 winner-box">
-	                        <h1 class="brand-heading">You WIN!!</h1>
-	                        <img src="../winner.png" alt="">
+	                        <h1 class="brand-heading">¡¡GANASTE!!</h1>
+	                        <img src="../img/winner.png" alt="">
 	                    </div>
 	                    <div class="col-md-8 col-md-offset-2 loser-box">
-	                        <h1 class="brand-heading">You LOSE!!</h1>
-	                        <img src="../loser.png" alt="">
+	                        <h1 class="brand-heading">¡¡PERDISTE!!</h1>
+	                        <img src="../img/loser.png" alt="">
 	                    </div>
 	                </div>
 	            </div>

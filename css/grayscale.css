@@ -390,6 +390,10 @@ ul.list-result.mierder span#pm {
 .loser-box {
   display: none;
 }
+.winner-box img,
+.loser-box img {
+  width: 50%;
+}
 .winner .winner-box {
   display: block;
 }
