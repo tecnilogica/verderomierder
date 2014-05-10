@@ -17,6 +17,10 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.ie.css" />
+    <![endif]-->
 
     <!-- Custom Theme CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
@@ -59,16 +63,35 @@
         </div>
     </section>
 
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+    <div id="map"></div>
 
-    <iframe width='100%' height='320' frameborder='0' src='http://javimax.cartodb.com/viz/b51eb822-d825-11e3-84f5-0edbca4b5057/embed_map?title=false&description=false&search=false&shareable=false&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=false&fullscreen=false&sublayer_options=1&sql=&zoom=5&center_lat=40.653024159812&center_lon=-3.721875' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    <script>
+      cartodb.createVis('map', 'http://javimax.cartodb.com/api/v2/viz/b51eb822-d825-11e3-84f5-0edbca4b5057/viz.json')
+      .done(function(vis, layers) {
+        // layer 0 is the base layer, layer 1 is cartodb layer
+        // when setInteraction is disabled featureOver is triggered
+        layers[1].setInteraction(true);
+        layers[1].on('featureOver', function(e, latlng, pos, data, layerNumber) {
+          cartodb.log.log(e, latlng, pos, data, layerNumber);
+        });
+
+        // you can get the native map to work with it
+        // depending if you use google maps or leaflet
+        map = vis.getNativeMap();
+
+        // now, perform any operations you need
+        // map.setZoom(3)
+        // map.setCenter(new google.maps.Latlng(...))
+      });
+
+      
+    </script>
 
     <!-- Core JavaScript Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
 
 </body>
 
