@@ -299,20 +299,52 @@ body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 .card-template {
-  background: #28C3AB;
-  border: 20px solid #28C3AB;
+  background: #CCC;
+  border: 20px solid #CCC;
 }
 .card-template .intro {
   background: #000;
   border-radius: 10px;
 }
+.card-template h1 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
 ul.list-result {
   float: left;
+  margin-top: 20px;
+  padding-left: 0;
   text-align: left;
   width: 50%;
 }
 ul.list-result li {
   list-style: none;
+  margin-bottom: 5px;
+}
+ul.list-result li i {
+  margin-right: 5px;
+}
+ul.list-result.verder i {
+  color: #28C3AB;
+}
+ul.list-result.mierder i {
+  color: #DF2E4B;
+}
+.buttons-box button {
+  border: 0 none;
+  color: #FFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  float: left;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  width: 50%;
+}
+.buttons-box button.verder {
+  background: #28C3AB;
+}
+.buttons-box button.mierder {
+  background: #DF2E4B;
 }
 a img.logo {
   width: 100px;
