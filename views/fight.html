@@ -63,11 +63,13 @@
 	        <div class="intro-body">
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-md-8 col-md-offset-2">
-	                        <h1 class="brand-heading">¡¡You WIN!!</h1>
+	                    <div class="col-md-8 col-md-offset-2 winner-box">
+	                        <h1 class="brand-heading">You WIN!!</h1>
+	                        <img src="../winner.png" alt="">
 	                    </div>
-	                    <div class="col-md-8 col-md-offset-2">
-	                        <h1 class="brand-heading">¡¡You LOSE!!</h1>
+	                    <div class="col-md-8 col-md-offset-2 loser-box">
+	                        <h1 class="brand-heading">You LOSE!!</h1>
+	                        <img src="../loser.png" alt="">
 	                    </div>
 	                </div>
 	            </div>
