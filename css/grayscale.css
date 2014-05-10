@@ -21,6 +21,9 @@ h6 {
   font-weight: 700;
   letter-spacing: 1px;
 }
+h1.brand-heading {
+  margin-bottom: 40px;
+}
 p {
   margin: 0 0 25px;
   font-size: 18px;
@@ -243,7 +246,9 @@ a:focus {
 .btn-default {
   border: 1px solid #28c3ab;
   color: #28c3ab;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.35);
+  margin: 0px 0px 20px 0px;
+  width: 212px;
 }
 .btn-default:hover,
 .btn-default:focus {
@@ -308,4 +313,9 @@ ul.list-result {
 }
 ul.list-result li {
   list-style: none;
+}
+a img.logo {
+  width: 100px;
+  float: right;
+  margin: 25px 10px 0 0;
 }
