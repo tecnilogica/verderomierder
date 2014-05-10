@@ -54,7 +54,7 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <p>Verder o Mierder es un juego de cartas para mejorar el conocimiento del medioambiente de una manera lúdica, desarrollado durante el <a href="http://ecohack.org/">EcoHack 2014.</a></p>
                 <h4 class="about">Instrucciones</h4>
-                <p>Juega contra otro contrincante una partida corta (3 turnos), normal (7 turnos) o larga (11 turnos). En cada turno te enfrentarás a tu contrincante comparando una característica de la ciudad que os haya correspondido.</p>
+                <p>Juega contra otro contrincante una partida corta (3 turnos), normal (7 turnos) o larga (11 turnos). En cada turno te enfrentarás a tu contrincante comparando una característica de la ciudad que os haya correspondido. Puedes elegir entre Uso del transporte público, Arbolado urbano (Porcentaje sobre la coberturas simples artificiales de la ciudad) y Zonas forestales (Porcentaje de ocupación del suelo sobre la superficie municipal), donde gana el número mayor y entre emisiones de NO<sub>2</sub>, CO<sub>2</sub> y PM10 (partículas finas), donde gana el número menor.</p>
                 <h4 class="about">Hecho con</h4>
                 <p><a href="http://getbootstrap.com/">Bootstrap</a> con el tema <a href="http://startbootstrap.com/grayscale">Grayscale</a>, <a href="http://cartodb.com/">CartoDB</a>, <a href="http://www.w3.org/html/wg/">HTML5</a>, <a href="http://www.w3.org/TR/2001/WD-css3-roadmap-20010523/">CSS3</a>, <a href="http://en.wikipedia.org/wiki/JavaScript">Javascript</a> y <a href="http://www.php.net/">PHP</a>.</p>
                 <h4 class="about">Desarrollado por</h4>
@@ -62,28 +62,24 @@
             </div>
         </div>
     </section>
-
+    
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
     <div id="map"></div>
 
     <script>
-      cartodb.createVis('map', 'http://javimax.cartodb.com/api/v2/viz/b51eb822-d825-11e3-84f5-0edbca4b5057/viz.json')
-      .done(function(vis, layers) {
-        // layer 0 is the base layer, layer 1 is cartodb layer
-        // when setInteraction is disabled featureOver is triggered
-        layers[1].setInteraction(true);
-        layers[1].on('featureOver', function(e, latlng, pos, data, layerNumber) {
-          cartodb.log.log(e, latlng, pos, data, layerNumber);
-        });
-
-        // you can get the native map to work with it
-        // depending if you use google maps or leaflet
-        map = vis.getNativeMap();
-
-        // now, perform any operations you need
-        // map.setZoom(3)
-        // map.setCenter(new google.maps.Latlng(...))
-      });
+      
+      cartodb.createVis('map', 'http://javimax.cartodb.com/api/v2/viz/b51eb822-d825-11e3-84f5-0edbca4b5057/viz.json', {
+            shareable: false,
+            title: false,
+            description: false,
+            search: false,
+            tiles_loader:true,
+            center_lat: 40.653024159812,
+            center_lon: -4.921875,
+            zoom: 4,
+            zoomControl: false
+        })
 
       
     </script>
