@@ -299,21 +299,26 @@ body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 .card-template {
-  background: #CCC;
-  border: 20px solid #CCC;
+  background: #0C5776;
+  border: 20px solid #0C5776;
 }
 .card-template .intro {
   background: #000;
   border-radius: 10px;
+  padding: 10px 0;
 }
 .card-template h1 {
   font-size: 32px;
   margin-bottom: 0;
 }
+.card-template img#imagen {
+  width: 100%;
+}
 ul.list-result {
   float: left;
+  margin-bottom: 0;
   margin-top: 20px;
-  padding-left: 0;
+  padding-left: 15px;
   text-align: left;
   width: 50%;
 }
@@ -330,14 +335,30 @@ ul.list-result.verder i {
 ul.list-result.mierder i {
   color: #DF2E4B;
 }
+ul.list-result.mierder span#co2 {
+  background: url(../img/ico_co2.png) no-repeat;
+  background-size: contain;
+  padding-left: 23px;
+}
+ul.list-result.mierder span#no2 {
+  background: url(../img/ico_no2.png) no-repeat;
+  background-size: contain;
+  padding-left: 23px;
+}
+ul.list-result.mierder span#pm {
+  background: url(../img/ico_pm.png) no-repeat;
+  background-size: contain;
+  padding-left: 23px;
+}
 .buttons-box button {
   border: 0 none;
   color: #FFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   float: left;
+  font-size: 20px;
   font-weight: bold;
-  height: 40px;
-  line-height: 40px;
+  height: 60px;
+  line-height: 60px;
   width: 50%;
 }
 .buttons-box button.verder {

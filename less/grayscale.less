@@ -379,21 +379,26 @@ body {
 
 // STYLES FOR CARD
 .card-template{
-    background: #CCC;
-    border: 20px solid #CCC;
+    background: #0C5776;
+    border: 20px solid #0C5776;
     .intro{
         background: #000;
         border-radius: 10px;
+        padding: 10px 0;
     }
     h1{
         font-size: 32px;
         margin-bottom: 0;
     }
+    img#imagen{
+        width: 100%;
+    }
 }
 ul.list-result{
     float: left;
+    margin-bottom: 0;
     margin-top: 20px;
-    padding-left: 0;
+    padding-left: 15px;
     text-align: left;    
     width: 50%;
     li{
@@ -411,7 +416,22 @@ ul.list-result{
     &.mierder{
         i{
             color: #DF2E4B;    
-        }        
+        }   
+        span#co2{
+            background: url(../img/ico_co2.png) no-repeat;           
+            background-size: contain;
+            padding-left: 23px;            
+        }     
+        span#no2{
+            background: url(../img/ico_no2.png) no-repeat;
+            background-size: contain;
+            padding-left: 23px;            
+        }     
+        span#pm{
+            background: url(../img/ico_pm.png) no-repeat;
+            background-size: contain;
+            padding-left: 23px;
+        }     
     }
 }
 .buttons-box{
@@ -420,9 +440,10 @@ ul.list-result{
         color: #FFF;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         float: left;
+        font-size: 20px;
         font-weight: bold;
-        height: 40px;
-        line-height: 40px;
+        height: 60px;
+        line-height: 60px;
         width: 50%;
         &.verder{
             background: #28C3AB;
