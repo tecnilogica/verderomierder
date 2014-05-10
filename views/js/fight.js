@@ -85,6 +85,12 @@ var Fight = {};
 
 			document.getElementById('card').style.display = 'none';
 			document.getElementById('result-card').style.display = 'block';
+			if(this.score.verder > (Deck.length-1)/2){
+				document.getElementById('result-card').className += ' winner';
+			}else{
+				document.getElementById('result-card').className += ' loser';
+			}
+			
 
 		}
 
