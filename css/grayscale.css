@@ -300,11 +300,11 @@ body {
 }
 .card-template {
   background: #0C5776;
-  border: 20px solid #0C5776;
+  border: 10px solid #0C5776;
 }
 .card-template .intro {
   background: #000;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px 0;
 }
 .card-template h1 {
@@ -366,6 +366,9 @@ ul.list-result.mierder span#pm {
 }
 .buttons-box button.mierder {
   background: #DF2E4B;
+}
+#result-card {
+  display: none;
 }
 a img.logo {
   width: 100px;
