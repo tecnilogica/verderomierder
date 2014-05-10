@@ -23,17 +23,43 @@
 	<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
 
-    <section class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading" id="ciudad"></h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<!-- SHOW CARD -->
+	<div id="card" class="card-template">
+	    <section class="intro">
+	        <div class="intro-body">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-md-8 col-md-offset-2">
+	                        <h1 class="brand-heading" id="ciudad"></h1>
+	                        <span id="habitantes"></span>
+	                        <span id="renta"></span>
+	                    </div>
+	                </div>
+	                <div>
+	                	<img src="" alt="" id="imagen">
+	                </div>
+	                <div>
+	                	<ul class="list-result verder">
+	                		<li><span id="accesibilidad"></span></li>
+	                		<li><span id="transporte"></span></li>
+	                		<li><span id="forestales"></span></li>
+	                		<li><span id="arbolado"></span></li>
+	                	</ul>
+	                	<ul class="list-result mierder">
+	                		<li><span id="no2"></span></li>
+	                		<li><span id="co2"></span></li>
+	                		<li><span id="pm"></span></li>
+	                	</ul>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+	</div>
+
+
+	<!-- RESULT CARD     -->
+<!--     <div id="result-card" class="card-template">
+    </div> -->
 
 <!-- <iframe width='100%' height='220' frameborder='0' src='http://javimax.cartodb.com/viz/b51eb822-d825-11e3-84f5-0edbca4b5057/embed_map?title=false&description=false&search=false&shareable=false&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=false&fullscreen=false&sublayer_options=1&sql=&zoom=3&center_lat=44.653024159812&center_lon=-4.921875' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
  -->
@@ -42,7 +68,7 @@
     <div class="col-lg-8 col-lg-offset-2">
 			<button data-value="1" class="verder next" id="verder">VERDER</button>
 			<button data-value="0" class="mierder next" id="mierder">MIERDER</button>
-			<button class="result">RESULT</button>
+			<button class="result" id="result">RESULT</button>
 			
     </div> 	 	
  </section>
@@ -56,24 +82,12 @@
 
 		<script type="text/javascript" src="../views/js/fight.js"></script>
 	    <!-- Custom Theme JavaScript -->
-	    <script src="../js/grayscale.js"></script>
 		<script type="text/javascript">
 
 
 			Deck = <?php echo $carddata; ?>;
 
 			Fight.init();
-
-			// Delegate events
-			document.addEventListener('click', function(ev){
-
-				if(ev.target.className.match('next') ){
-
-					Fight.next(ev.target.getAttribute('data-value'));
-
-				}
-			})
-
 
 		</script>
 
