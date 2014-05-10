@@ -69,7 +69,7 @@ var Fight = {};
 			document.getElementById('no2').innerHTML = this.card.concentracion_no2_mg_m3.toLocaleString() + ' mg/m<sup>3</sup>';
 			document.getElementById('co2').innerText = this.card.emisiones_co2_tm_per_capita.toLocaleString() + ' tm';
 			document.getElementById('pm').innerHTML = this.card.pm_2_5_mg_m3.toLocaleString() + ' mg/m<sup>3</sup>';
-			document.getElementById('transporte').innerText = this.card.uso_transporte_no_vehiculo_privado.toLocaleString();
+			document.getElementById('transporte').innerText = this.card.uso_transporte_no_vehiculo_privado.toLocaleString() + '%';
 			document.getElementById('forestales').innerText = this.card.zonas_forestales.toLocaleString() + '%';
 			document.getElementById('arbolado').innerText = this.card.zonas_verdes_y_arbolado.toLocaleString() + '%';
 
