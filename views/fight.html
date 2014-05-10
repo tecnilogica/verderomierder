@@ -17,7 +17,7 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom Theme CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="../css/grayscale.css" rel="stylesheet">
 
 </head>
 	<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
@@ -28,21 +28,35 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Verder o Mierder</h1>
+                        <h1 class="brand-heading" id="ciudad"></h1>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8 col-lg-offset-2">
-					<button data-value="1" class="verder next">VERDER</button>
-					<button data-value="0" class="mierder next">MIERDER</button>
-					<button class="result">RESULT</button>
-            </div>
         </div>
     </section>
-<iframe width='100%' height='220' frameborder='0' src='http://javimax.cartodb.com/viz/b51eb822-d825-11e3-84f5-0edbca4b5057/embed_map?title=false&description=false&search=false&shareable=false&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=false&fullscreen=false&sublayer_options=1&sql=&zoom=3&center_lat=44.653024159812&center_lon=-4.921875' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-		<script type="text/javascript" src="js/fight.js"></script>
+
+<!-- <iframe width='100%' height='220' frameborder='0' src='http://javimax.cartodb.com/viz/b51eb822-d825-11e3-84f5-0edbca4b5057/embed_map?title=false&description=false&search=false&shareable=false&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=false&fullscreen=false&sublayer_options=1&sql=&zoom=3&center_lat=44.653024159812&center_lon=-4.921875' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+ -->
+
+ <section>
+    <div class="col-lg-8 col-lg-offset-2">
+			<button data-value="1" class="verder next" id="verder">VERDER</button>
+			<button data-value="0" class="mierder next" id="mierder">MIERDER</button>
+			<button class="result">RESULT</button>
+			
+    </div> 	 	
+ </section>
+
+
+    <!-- Core JavaScript Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+		<script type="text/javascript" src="../views/js/fight.js"></script>
 	    <!-- Custom Theme JavaScript -->
-	    <script src="js/grayscale.js"></script>
+	    <script src="../js/grayscale.js"></script>
 		<script type="text/javascript">
 
 
