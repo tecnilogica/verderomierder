@@ -433,6 +433,10 @@ ul.list-result.mierder span#pm {
 .loser .winner-box {
   display: none;
 }
+#again {
+  margin-top: 60px;
+  width: 100%;
+}
 a img.logo {
   width: 100px;
   float: right;
