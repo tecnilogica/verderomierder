@@ -12,7 +12,7 @@
 		<script type="text/javascript" src="js/fight.js"></script>
 		<script type="text/javascript">
 
-			Deck = {{ @carddata }};
+			Deck = <?php echo $carddata; ?>;
 
 			Fight.init();
 
