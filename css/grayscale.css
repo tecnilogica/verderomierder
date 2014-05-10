@@ -300,11 +300,11 @@ body {
 }
 .card-template {
   background: #0C5776;
-  border: 20px solid #0C5776;
+  border: 10px solid #0C5776;
 }
 .card-template .intro {
   background: #000;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px 0;
 }
 .card-template h1 {
@@ -318,7 +318,7 @@ ul.list-result {
   float: left;
   margin-bottom: 0;
   margin-top: 20px;
-  padding-left: 15px;
+  padding-left: 5px;
   text-align: left;
   width: 50%;
 }
@@ -329,31 +329,47 @@ ul.list-result li {
 ul.list-result li i {
   margin-right: 5px;
 }
+ul.list-result li span {
+  font-size: 14px;
+}
 ul.list-result.verder i {
   color: #28C3AB;
+  font-size: 20px;
+}
+ul.list-result.mierder li {
+  margin-bottom: 0;
 }
 ul.list-result.mierder i {
   color: #DF2E4B;
 }
 ul.list-result.mierder span#co2 {
-  background: url(../img/ico_co2.png) no-repeat;
-  background-size: contain;
+  background: url(../img/ico_co2.png) left 9px no-repeat;
+  background-size: 18px;
   padding-left: 23px;
+  padding-bottom: 20px;
+  line-height: 27px;
+  padding-top: 12px;
 }
 ul.list-result.mierder span#no2 {
-  background: url(../img/ico_no2.png) no-repeat;
-  background-size: contain;
+  background: url(../img/ico_no2.png) left 9px no-repeat;
+  background-size: 18px;
   padding-left: 23px;
+  padding-bottom: 20px;
+  line-height: 27px;
+  padding-top: 12px;
 }
 ul.list-result.mierder span#pm {
-  background: url(../img/ico_pm.png) no-repeat;
-  background-size: contain;
+  background: url(../img/ico_pm.png) left 9px no-repeat;
+  background-size: 18px;
   padding-left: 23px;
+  padding-bottom: 20px;
+  line-height: 27px;
+  padding-top: 12px;
 }
 .buttons-box button {
   border: 0 none;
   color: #FFF;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   float: left;
   font-size: 20px;
   font-weight: bold;
@@ -366,6 +382,25 @@ ul.list-result.mierder span#pm {
 }
 .buttons-box button.mierder {
   background: #DF2E4B;
+}
+#result-card {
+  display: none;
+}
+.winner-box,
+.loser-box {
+  display: none;
+}
+.winner .winner-box {
+  display: block;
+}
+.winner .loser-box {
+  display: none;
+}
+.loser .loser-box {
+  display: block;
+}
+.loser .winner-box {
+  display: none;
 }
 a img.logo {
   width: 100px;

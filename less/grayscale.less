@@ -380,10 +380,10 @@ body {
 // STYLES FOR CARD
 .card-template{
     background: #0C5776;
-    border: 20px solid #0C5776;
+    border: 10px solid #0C5776;
     .intro{
         background: #000;
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 10px 0;
     }
     h1{
@@ -398,7 +398,7 @@ ul.list-result{
     float: left;
     margin-bottom: 0;
     margin-top: 20px;
-    padding-left: 15px;
+    padding-left: 5px;
     text-align: left;    
     width: 50%;
     li{
@@ -407,30 +407,46 @@ ul.list-result{
         i{
             margin-right: 5px;
         }
+        span{
+            font-size: 14px;
+        }
     }
     &.verder{
         i{
             color: #28C3AB;
+            font-size: 20px;
         }
     }
     &.mierder{
+        li{
+            margin-bottom: 0;
+        }
         i{
             color: #DF2E4B;    
         }   
         span#co2{
-            background: url(../img/ico_co2.png) no-repeat;           
-            background-size: contain;
-            padding-left: 23px;            
+            background: url(../img/ico_co2.png) left 9px no-repeat;           
+            background-size: 18px;
+            padding-left: 23px;
+            padding-bottom: 20px;
+            line-height: 27px;
+            padding-top: 12px;
         }     
         span#no2{
-            background: url(../img/ico_no2.png) no-repeat;
-            background-size: contain;
-            padding-left: 23px;            
+            background: url(../img/ico_no2.png) left 9px no-repeat;
+            background-size: 18px;
+            padding-left: 23px;
+            padding-bottom: 20px;
+            line-height: 27px;
+            padding-top: 12px;
         }     
         span#pm{
-            background: url(../img/ico_pm.png) no-repeat;
-            background-size: contain;
+            background: url(../img/ico_pm.png) left 9px no-repeat;
+            background-size: 18px;
             padding-left: 23px;
+            padding-bottom: 20px;
+            line-height: 27px;
+            padding-top: 12px;
         }     
     }
 }
@@ -438,7 +454,7 @@ ul.list-result{
     button{
         border: 0 none;
         color: #FFF;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
         float: left;
         font-size: 20px;
         font-weight: bold;
@@ -454,9 +470,30 @@ ul.list-result{
     }
 }
 
-
-
-
+// CARD RESULTS
+#result-card{
+    display: none;
+}
+.winner-box,
+.loser-box{
+    display: none;   
+}
+.winner{
+    .winner-box{
+        display: block;
+    }
+    .loser-box{
+        display: none;
+    }
+}
+.loser{
+    .loser-box{
+        display: block;
+    }
+    .winner-box{
+        display: none;
+    }
+}
 
 
 
