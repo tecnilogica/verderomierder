@@ -79,7 +79,6 @@
 	            </div>
 	        </div>
 	    </section>
-
     </div>
 
 
@@ -92,6 +91,7 @@
     <div class="buttons-box">
 		<button data-value="1" class="verder next" id="verder">VERDER</button>
 		<button data-value="0" class="mierder next" id="mierder">MIERDER</button>			
+		<button data-value="0" class="again" id="again">¿Otra partida?</button>			
     </div> 	 	
  </section>
 
@@ -110,6 +110,10 @@
 			Deck = {{ @carddata }};
 
 			Fight.init();
+
+			// document.getElementById('mierder').style.display = 'none';
+			// document.getElementById('verder').style.display = 'none';
+			// Fight.showResults();
 
 		</script>
 

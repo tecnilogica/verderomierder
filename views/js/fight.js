@@ -17,6 +17,8 @@ var Fight = {};
 			this.card = Deck[this.index];
 			this.setValues();
 
+			document.getElementById('again').style.display = 'none';
+
 			// Delegate events
 			document.addEventListener('click', function(ev){
 
@@ -24,11 +26,13 @@ var Fight = {};
 
 					_self.next(ev.target.getAttribute('data-value'));
 
+				} else if(ev.target.className.match('again') ){
+
+					window.location.href = '../index.html';
+
 				}
 
 			});
-
-
 			
 		},
 
@@ -78,6 +82,8 @@ var Fight = {};
 		},
 
 		showResults: function(){
+
+			document.getElementById('again').style.display = 'block';
 
 			document.getElementById('card').style.display = 'none';
 			document.getElementById('result-card').style.display = 'block';
