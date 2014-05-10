@@ -15,7 +15,7 @@ var Fight = {};
 			var _self = this;
 
 			this.card = Deck[this.index];
-			this._setValues();
+			this.setValues();
 
 			// Delegate events
 			document.addEventListener('click', function(ev){
@@ -28,7 +28,7 @@ var Fight = {};
 
 				if(ev.target.className.match('result')){
 
-					_self._showResults();
+					_self.showResults();
 
 				}
 
@@ -52,7 +52,7 @@ var Fight = {};
 			if(Deck.length-1>this.index){
 				this.index++;
 				this.card = Deck[this.index];
-				this._setValues();
+				this.setValues();
 			}else{
 				//Set result button
 				document.getElementById('mierder').style.display = 'none';
@@ -64,7 +64,7 @@ var Fight = {};
 
 		},
 
-		_setValues: function(){
+		setValues: function(){
 
 			document.getElementById('ciudad').innerText = this.card.ciudad;
 			document.getElementById('habitantes').innerText = this.card.habitantes;
@@ -81,7 +81,7 @@ var Fight = {};
 
 		},
 
-		_showResults: function(){
+		showResults: function(){
 
 			document.getElementById('card').style.display = 'none';
 			document.getElementById('result-card').style.display = 'block';
