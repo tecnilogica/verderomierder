@@ -336,26 +336,35 @@ ul.list-result.verder i {
   color: #28C3AB;
   font-size: 20px;
 }
+ul.list-result.mierder li {
+  margin-bottom: 0;
+}
 ul.list-result.mierder i {
   color: #DF2E4B;
 }
 ul.list-result.mierder span#co2 {
-  background: url(../img/ico_co2.png) no-repeat;
-  background-size: 20px;
+  background: url(../img/ico_co2.png) left 9px no-repeat;
+  background-size: 18px;
   padding-left: 23px;
   padding-bottom: 20px;
+  line-height: 27px;
+  padding-top: 12px;
 }
 ul.list-result.mierder span#no2 {
-  background: url(../img/ico_no2.png) no-repeat;
-  background-size: 20px;
+  background: url(../img/ico_no2.png) left 9px no-repeat;
+  background-size: 18px;
   padding-left: 23px;
   padding-bottom: 20px;
+  line-height: 27px;
+  padding-top: 12px;
 }
 ul.list-result.mierder span#pm {
-  background: url(../img/ico_pm.png) no-repeat;
-  background-size: 20px;
+  background: url(../img/ico_pm.png) left 9px no-repeat;
+  background-size: 18px;
   padding-left: 23px;
   padding-bottom: 20px;
+  line-height: 27px;
+  padding-top: 12px;
 }
 .buttons-box button {
   border: 0 none;
