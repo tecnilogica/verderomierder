@@ -329,6 +329,9 @@ ul.list-result li {
 ul.list-result li i {
   margin-right: 5px;
 }
+ul.list-result li span {
+  font-size: 13px;
+}
 ul.list-result.verder i {
   color: #28C3AB;
   font-size: 20px;
