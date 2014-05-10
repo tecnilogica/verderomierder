@@ -40,10 +40,10 @@ var Fight = {};
 			//Update score
 			if(score==0){
 				this.score.mierder++;
-				document.getElementById('tuyos').innerText = this.score.mierder;
+				document.getElementById('tuyos').innerHTML = this.score.mierder;
 			}else{
 				this.score.verder++;
-				document.getElementById('mios').innerText = this.score.verder;
+				document.getElementById('mios').innerHTML = this.score.verder;
 			}
 			
 
@@ -64,20 +64,20 @@ var Fight = {};
 
 		setValues: function(){
 
-			document.getElementById('position').innerText = this.index+1 + ' de ' + Deck.length;
+			document.getElementById('position').innerHTML = this.index+1 + ' de ' + Deck.length;
 
-			document.getElementById('ciudad').innerText = this.card.ciudad;
-			document.getElementById('habitantes').innerText = this.card.habitantes.toLocaleString() + ' hab.';
-			document.getElementById('renta').innerText = this.card.renta.toLocaleString() + '€';
+			document.getElementById('ciudad').innerHTML = this.card.ciudad;
+			document.getElementById('habitantes').innerHTML = this.card.habitantes.toLocaleString() + ' hab.';
+			document.getElementById('renta').innerHTML = this.card.renta.toLocaleString() + '€';
 			document.getElementById('imagen').src = 'img/imagen_' + this.card.cartodb_id + '.png';			
 
 			//document.getElementById('accesibilidad').innerText = this.card.accesibilidad_y_movilidad_m_100_urbantur_2012.toLocaleString() + ' / 100';
 			document.getElementById('no2').innerHTML = this.card.concentracion_no2_mg_m3.toLocaleString() + ' mg/m<sup>3</sup>';
-			document.getElementById('co2').innerText = this.card.emisiones_co2_tm_per_capita.toLocaleString() + ' tm';
+			document.getElementById('co2').innerHTML = this.card.emisiones_co2_tm_per_capita.toLocaleString() + ' tm';
 			document.getElementById('pm').innerHTML = this.card.pm_2_5_mg_m3.toLocaleString() + ' mg/m<sup>3</sup>';
-			document.getElementById('transporte').innerText = this.card.uso_transporte_no_vehiculo_privado.toLocaleString() + '%';
-			document.getElementById('forestales').innerText = this.card.zonas_forestales.toLocaleString() + '%';
-			document.getElementById('arbolado').innerText = this.card.zonas_verdes_y_arbolado.toLocaleString() + '%';
+			document.getElementById('transporte').innerHTML = this.card.uso_transporte_no_vehiculo_privado.toLocaleString() + '%';
+			document.getElementById('forestales').innerHTML = this.card.zonas_forestales.toLocaleString() + '%';
+			document.getElementById('arbolado').innerHTML = this.card.zonas_verdes_y_arbolado.toLocaleString() + '%';
 
 		},
 
