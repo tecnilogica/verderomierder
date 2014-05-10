@@ -26,12 +26,6 @@ var Fight = {};
 
 				}
 
-				if(ev.target.className.match('result')){
-
-					_self.showResults();
-
-				}
-
 			});
 
 
@@ -57,7 +51,7 @@ var Fight = {};
 				//Set result button
 				document.getElementById('mierder').style.display = 'none';
 				document.getElementById('verder').style.display = 'none';
-				document.getElementById('result').style.display = 'block';
+				this.showResults();
 				
 			}
 
