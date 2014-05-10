@@ -15,7 +15,7 @@ var Fight = {};
 			var _self = this;
 
 			this.card = Deck[this.index];
-			this._setValues();
+			this.setValues();
 
 			// Delegate events
 			document.addEventListener('click', function(ev){
@@ -28,7 +28,7 @@ var Fight = {};
 
 				if(ev.target.className.match('result')){
 
-					_self._showResults();
+					_self.showResults();
 
 				}
 
@@ -52,7 +52,7 @@ var Fight = {};
 			if(Deck.length-1>this.index){
 				this.index++;
 				this.card = Deck[this.index];
-				this._setValues();
+				this.setValues();
 			}else{
 				//Set result button
 				document.getElementById('mierder').style.display = 'none';
@@ -64,12 +64,12 @@ var Fight = {};
 
 		},
 
-		_setValues: function(){
+		setValues: function(){
 
 			document.getElementById('ciudad').innerText = this.card.ciudad;
 			document.getElementById('habitantes').innerText = this.card.habitantes;
 			document.getElementById('renta').innerText = this.card.renta;
-			document.getElementById('imagen').src = 'img/imagen_' + this.card.cartodb_id;			
+			document.getElementById('imagen').src = '../img/imagen_' + this.card.cartodb_id;			
 
 			document.getElementById('accesibilidad').innerText = this.card.accesibilidad_y_movilidad_m_100_urbantur_2012;
 			document.getElementById('no2').innerText = this.card.concentracion_no2_mg_m3;
@@ -81,7 +81,7 @@ var Fight = {};
 
 		},
 
-		_showResults: function(){
+		showResults: function(){
 
 			document.getElementById('card').style.display = 'none';
 			document.getElementById('result-card').style.display = 'block';
