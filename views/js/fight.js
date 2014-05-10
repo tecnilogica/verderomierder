@@ -28,7 +28,7 @@ var Fight = {};
 
 				} else if(ev.target.className.match('again') ){
 
-					window.location.href = '../index.html';
+					window.location.href = 'index.html';
 
 				}
 
@@ -69,7 +69,7 @@ var Fight = {};
 			document.getElementById('ciudad').innerText = this.card.ciudad;
 			document.getElementById('habitantes').innerText = this.card.habitantes.toLocaleString() + ' hab.';
 			document.getElementById('renta').innerText = this.card.renta.toLocaleString() + '€';
-			document.getElementById('imagen').src = '../img/imagen_' + this.card.cartodb_id + '.png';			
+			document.getElementById('imagen').src = 'img/imagen_' + this.card.cartodb_id + '.png';			
 
 			//document.getElementById('accesibilidad').innerText = this.card.accesibilidad_y_movilidad_m_100_urbantur_2012.toLocaleString() + ' / 100';
 			document.getElementById('no2').innerHTML = this.card.concentracion_no2_mg_m3.toLocaleString() + ' mg/m<sup>3</sup>';
