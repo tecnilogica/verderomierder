@@ -30,10 +30,14 @@
 	            <div class="container">
 	                <div class="row">
 	                    <div class="col-md-8 col-md-offset-2">
-	                        <h1 class="brand-heading" id="ciudad"></h1>
-	                        <span id="habitantes"></span>
-	                         |
-	                        <span id="renta"></span>
+	                        <h1 class="brand-heading" id="ciudad"></h1>							
+							<span id="position"></span>
+							<div class="data-city">
+		                        <span id="habitantes"></span>
+		                         |
+		                        <span id="renta"></span>								
+							</div>
+
 	                    </div>
 	                </div>
 	                <div>
@@ -41,7 +45,7 @@
 	                </div>
 	                <div>
 	                	<ul class="list-result verder">
-	                		<li><i class="fa fa-wheelchair"></i><span id="accesibilidad"></span></li>
+	                		<li><i class="fa fa-rocket"></i><span id="transporte"></span></li>
 	                		<li><i class="fa fa-picture-o"></i><span id="forestales"></span></li>
 	                		<li><i class="fa fa-leaf"></i><span id="arbolado"></span></li>
 	                	</ul>
@@ -80,6 +84,11 @@
 
 
  <section>
+	<div id="score">
+		<span id="mios">0</span>
+		<span>-</span>
+		<span id="tuyos">0</span>
+	</div>
     <div class="buttons-box">
 		<button data-value="1" class="verder next" id="verder">VERDER</button>
 		<button data-value="0" class="mierder next" id="mierder">MIERDER</button>			

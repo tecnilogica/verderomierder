@@ -30,14 +30,10 @@
 	            <div class="container">
 	                <div class="row">
 	                    <div class="col-md-8 col-md-offset-2">
-	                        <h1 class="brand-heading" id="ciudad"></h1>							
-							<span id="position"></span>
-							<div class="data-city">
-		                        <span id="habitantes"></span>
-		                         |
-		                        <span id="renta"></span>								
-							</div>
-
+	                        <h1 class="brand-heading" id="ciudad"></h1>
+	                        <span id="habitantes"></span>
+	                         |
+	                        <span id="renta"></span>
 	                    </div>
 	                </div>
 	                <div>
@@ -79,19 +75,14 @@
 	            </div>
 	        </div>
 	    </section>
+
     </div>
 
 
  <section>
-	<div id="score">
-		<span id="mios">0</span>
-		<span>-</span>
-		<span id="tuyos">0</span>
-	</div>
     <div class="buttons-box">
 		<button data-value="1" class="verder next" id="verder">VERDER</button>
 		<button data-value="0" class="mierder next" id="mierder">MIERDER</button>			
-		<button data-value="0" class="again" id="again">¿Otra partida?</button>			
     </div> 	 	
  </section>
 
@@ -107,13 +98,9 @@
 		<script type="text/javascript">
 
 
-			Deck = {{ @carddata }};
+			Deck = <?php echo $carddata; ?>;
 
 			Fight.init();
-
-			// document.getElementById('mierder').style.display = 'none';
-			// document.getElementById('verder').style.display = 'none';
-			// Fight.showResults();
 
 		</script>
 
