@@ -293,3 +293,11 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
+.card-template {
+  background: #28C3AB;
+  border: 20px solid #28C3AB;
+}
+.card-template .intro {
+  background: #000;
+  border-radius: 10px;
+}
